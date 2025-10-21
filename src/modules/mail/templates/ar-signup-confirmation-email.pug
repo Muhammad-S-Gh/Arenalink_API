@@ -1,0 +1,78 @@
+doctype html
+html(lang="ar" dir="rtl")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title تأكيد البريد الإلكتروني
+    style.
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f2f4f6;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.8;
+        text-align: right;
+        direction: rtl;
+      }
+      .wrapper {
+        width: 100%;
+        padding: 20px;
+        background-color: #f2f4f6;
+      }
+      .content {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      .header {
+        background-color: #0052cc;
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+      }
+      .body {
+        padding: 30px;
+      }
+      .button {
+        display: inline-block;
+        padding: 12px 20px;
+        margin: 20px 0;
+        background-color: #0052cc;
+        color: #ffffff !important;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+      }
+      .footer {
+        padding: 20px;
+        text-align: center;
+        font-size: 12px;
+        color: #888888;
+      }
+      h2, h3, h4 {
+        font-weight: 600;
+      }
+      a {
+        color: #0052cc;
+        word-break: break-word;
+      }
+
+  body
+    .wrapper
+      .content
+        .header
+          // Replace with your actual logo URL or embed inline
+          img(src="https://cdn-icons-png.flaticon.com/128/8983/8983107.png" alt="Arenalink" width="120")
+        .body
+          h2 مرحباً بك،
+          p شكراً لتسجيلك في Arenalink! لبدء استخدام حسابك، يرجى تأكيد بريدك الإلكتروني بالنقر على الزر أدناه:
+          a.button(href=verificationUrl target="_blank") تأكيد البريد الإلكتروني
+          p إذا لم يعمل الزر، يرجى نسخ هذا الرابط ولصقه في متصفحك:
+          p #[a(href=verificationUrl)= verificationUrl]
+          p إذا لم تقم بإنشاء هذا الحساب، يمكنك تجاهل هذه الرسالة.
+        .footer
+          p © #{new Date().getFullYear()} Arenalink. جميع الحقوق محفوظة.
+          p #[a(href="https://arenalink.com/privacy" style="color:#0052cc; text-decoration:none") سياسة الخصوصية]

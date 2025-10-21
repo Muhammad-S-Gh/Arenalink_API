@@ -1,0 +1,12 @@
+{
+    "stripeError": "Payment failed: {{msg}}.",
+    "unexpectedError": "An unexpected error occurred while processing the payment. Please try again later.",
+    "paymentCompleted": "payment completed",
+    "paymentNotHandled": "payment failed",
+    "paymentNotFound": "payment record not found",
+    "paymentNotCompleted": "payment not completed",
+    "capacityExceeded": "capacity exceeded for this slot",
+    "MayCapacityExceeded": "it seems capacity exceeded for this slot, try again within 5 minuites",
+    "alreadyProcessed": "this payment was already completed",
+    "alreadyDeclined": "this payment was already declined"
+}

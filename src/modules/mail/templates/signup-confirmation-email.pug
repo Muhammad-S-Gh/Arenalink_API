@@ -1,0 +1,68 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Confirm Your Email
+    style.
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f2f4f6;
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+      }
+      .wrapper {
+        width: 100%;
+        padding: 20px;
+        background-color: #f2f4f6;
+      }
+      .content {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      .header {
+        background-color: #0052cc;
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+      }
+      .body {
+        padding: 30px;
+      }
+      .button {
+        display: inline-block;
+        padding: 12px 20px;
+        margin: 20px 0;
+        background-color: #0052cc;
+        color: #ffffff !important;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+      .footer {
+        padding: 20px;
+        text-align: center;
+        font-size: 12px;
+        color: #888888;
+      }
+
+  body
+    .wrapper
+      .content
+        .header
+          // Replace with your actual logo URL or embed inline
+          img(src="https://cdn-icons-png.flaticon.com/128/8983/8983107.png" alt="Arenalink" width="120")
+        .body
+          h2 Hi there,
+          p Thank you for registering at Arenalink! To start using your account, please confirm your email by clicking the button below:
+          a.button(href=verificationUrl target="_blank") Confirm Email
+          p If the button doesn’t work, copy and paste this link into your browser:
+          p #[a(href=verificationUrl)= verificationUrl]
+          p If you didn’t create this account, feel free to ignore this message.
+        .footer
+          p © #{new Date().getFullYear()} Arenalink. All rights reserved.
+          p #[a(href="https://arenalink.com/privacy" style="color:#0052cc; text-decoration:none") Privacy Policy]

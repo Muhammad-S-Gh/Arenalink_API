@@ -1,0 +1,10 @@
+{
+    "facilityNotFound": "Facility not found.",
+    "facilityInactive": "Cannot create schedule for an inactive facility.",
+    "UserNotAuthenticated": "User not authenticated",
+    "NotFound": "{ArEntity} Not Found",
+    "InternalServerError": "Internal Server Error",
+    "phoneNotFound": "phone number Not Found",
+    "OwnerNotAuthorized": "Owner is not active, therefore not authorized to perform this action",
+    "UserNotAuthorized": "User is not active, therefore not authorized to perform this action"
+}

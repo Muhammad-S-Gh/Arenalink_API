@@ -1,0 +1,41 @@
+{
+    "statusRequired": "الحالة مطلوبة",
+    "invalidStatus": "قيمة الحالة غير صالحة",
+    "currentPasswordRequired": "كلمة المرور الحالية مطلوبة",
+    "newPasswordRequired": "كلمة المرور الجديدة مطلوبة",
+    "passwordConfirmationRequired": "تأكيد كلمة المرور مطلوب",
+    "passwordMinLength": "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل",
+    "passwordsDoNotMatch": "كلمات المرور غير متطابقة",
+    "emailAlreadyInUse": "البريد الإلكتروني مستخدم بالفعل",
+    "phoneAlreadyInUse": "رقم الهاتف مستخدم بالفعل",
+    "firstNameRequired": "الاسم الأول مطلوب",
+    "firstNameMinLength": "يجب أن يتكون الاسم الأول من حرفين على الأقل",
+    "firstNameMaxLength": "لا يمكن أن يتجاوز الاسم الأول 255 حرفًا",
+    "lastNameRequired": "الاسم الأخير مطلوب",
+    "lastNameMinLength": "يجب أن يتكون الاسم الأخير من حرفين على الأقل",
+    "lastNameMaxLength": "لا يمكن أن يتجاوز الاسم الأخير 50 حرفًا",
+    "invalidEmail": "صيغة البريد الإلكتروني غير صالحة",
+    "emailMaxLength": "لا يمكن أن يتجاوز البريد الإلكتروني 255 حرفًا",
+    "invalidPhoneNumber": "صيغة رقم الهاتف غير صالحة",
+    "invalidLatitude": "قيمة خط العرض غير صالحة",
+    "invalidLongitude": "قيمة خط الطول غير صالحة",
+    "deleteUser": "لدى المستخدم حجوزات مستقبلية",
+    "deleteOwner": "لدى هذا المالك منشأت نشطة",
+
+    "errors": {
+        "user_not_found": "المستخدم غير موجود",
+        "wrong_password": "كلمة المرور خاطئة",
+        "owner_not_found": "المالك غير موجود",
+        "invalid_status": "الحالة غير صالحة",
+        "owner_not_found_by_user": "المالك غير موجود",
+        "unauthorized": "غير مصرح",
+        "token_not_found": "الرمز المميز غير موجود في رأس التفويض"
+    },
+    "success": {
+        "password_updated": "تم تحديث كلمة المرور بنجاح",
+        "profile_updated": "تم تحديث الملف الشخصي بنجاح",
+        "profile_deleted": "تم حذف الحساب بنجاح",
+        "logged_out": "تم تسجيل الخروج",
+        "status_changed": "تم تغيير الحالة بنجاح"
+    }
+}

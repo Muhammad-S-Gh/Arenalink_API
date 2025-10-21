@@ -1,0 +1,12 @@
+{
+    "stripeError": "فشل الدفع: {{msg}}.",
+    "unexpectedError": "حدث خطأ غير متوقع أثناء معالجة الدفع. الرجاء المحاولة مرة أخرى لاحقًا.",
+    "paymentCompleted": "تمت عملية الدفع بنجاح",
+    "paymentNotHandled": "فشلت عملية الدفع",
+    "paymentNotFound": "سجل الدفع غير موجود",
+    "paymentNotCompleted": "لم يتم دفع هذه الفاتورة",
+    "capacityExceeded": "تم تجاوز الحد الأقصى للحجوزات في هذه الفترة",
+    "MayCapacityExceeded": "يبدو أنه تم تجاوز الحد الأقصى للحجوزات في هذه الفترة أعد المحاولة بغضون 5 دقائق",
+    "alreadyProcessed": "تم معالجة عملية الدفع مسبقا",
+    "alreadyDeclined": "تم رفض عملية الدفع مسبقا"
+}

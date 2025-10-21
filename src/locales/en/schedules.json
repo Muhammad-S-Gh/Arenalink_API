@@ -1,0 +1,10 @@
+{
+    "invalidDayOfWeek": "Please select a valid day of the week.",
+    "invalidTimeFormat": "Time must be in HH:MM format (24-hour).",
+    "startMustBeBeforeEnd": "Start time must be before end time.",
+    "invalidIntervalFormat": "Interval must be H:MM format, e.g. 1:00 or 1:15.",
+    "duplicateDay": "Schedule for this day already exists.",
+    "start_before_end": "start time must be before end time",
+    "invalidIntervalRange": "Interval must be between 30 minutes and 12 hours, and fit within the start/end span.",
+    "dateMustBeFuture": "Date must be a future date (after today)."
+}

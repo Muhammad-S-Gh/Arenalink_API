@@ -1,0 +1,110 @@
+{{!-- hbs handleBars --}}
+<!doctype html>
+<html lang="{{lang}}" dir="{{#if isRTL}}rtl{{else}}ltr{{/if}}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{{titleLocalized}} - {{paymentId}}</title>
+    <style>
+      /* Reset & base */
+      :root { --brand:#0b62a4; --muted:#666; --border:#e6e6e6; --bg:#fafafa; font-family: "Helvetica Neue", Arial, sans-serif; }
+      html,body{margin:0;padding:0;background:#fff;color:#222}
+      body { padding:28px; font-size:13px; line-height:1.45; }
+      .wrapper { max-width: 800px; margin: 0 auto; }
+
+      /* Header */
+      .header { display:flex; justify-content:space-between; align-items:flex-start; gap:16px; margin-bottom:20px; }
+      .brand { font-size:20px; font-weight:700; color:var(--brand); }
+      .company-meta { text-align: right; color:var(--muted); font-size:12px; }
+      .company-meta div{margin-bottom:2px}
+
+      /* Invoice meta card */
+      .meta-card { border:1px solid var(--border); padding:12px; border-radius:6px; background:var(--bg); width:240px; text-align:right; }
+      .meta-row { display:flex; justify-content:space-between; margin-bottom:6px; }
+      .meta-row .k { color:var(--muted); font-size:12px; }
+      .meta-row .v { font-weight:600; }
+
+      /* Bill to */
+      .bill-box { border:1px solid var(--border); padding:12px; border-radius:6px; margin-bottom:18px; background:#fff;}
+      .bill-title { font-weight:700; margin-bottom:6px; }
+
+      /* Items table */
+      table.items { width:100%; border-collapse:collapse; margin-bottom:16px; }
+      table.items thead th { text-align:left; padding:8px 10px; border-bottom:2px solid var(--border); color:var(--muted); font-weight:600; font-size:12px; }
+      table.items tbody td { padding:10px; border-bottom:1px solid #f2f2f2; vertical-align:top; }
+      table.items .right { text-align:right; }
+
+      /* Totals */
+      .totals { display:flex; justify-content:flex-end; margin-top:8px; }
+      .totals .box { min-width:260px; border-top:1px solid var(--border); padding-top:8px; }
+      .totals .row { display:flex; justify-content:space-between; padding:6px 0; }
+      .totals .row.total { font-weight:700; font-size:15px; }
+
+      footer { margin-top:28px; font-size:11px; color:var(--muted); text-align:center; }
+
+      /* RTL tweaks */
+      [dir="rtl"] .header { flex-direction:row-reverse; }
+      [dir="rtl"] .company-meta { text-align:left; }
+      [dir="rtl"] .meta-card { text-align:left; }
+      [dir="rtl"] .bill-box { text-align:right; }
+      [dir="rtl"] table.items thead th, [dir="rtl"] table.items td { text-align:right; }
+      [dir="rtl"] .totals { justify-content:flex-start; }
+      [dir="rtl"] .totals .box { text-align:right; }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div>
+          <div class="brand">{{companyName}}</div>
+          <div class="company-meta">
+            {{#if companyAddress}}<div>{{companyAddress}}</div>{{/if}}
+            {{#if companyPhone}}<div>{{companyPhone}}</div>{{/if}}
+            {{#if companyEmail}}<div>{{companyEmail}}</div>{{/if}}
+          </div>
+        </div>
+
+        <div class="meta-card">
+          <div style="font-size:13px;font-weight:700;margin-bottom:6px;">{{#if (eq lang "ar")}}فاتورة{{else}}Invoice{{/if}}</div>
+          <div class="meta-row"><div class="k">{{#if (eq lang "ar")}}الرقم{{else}}No.{{/if}}</div><div class="v">#{{paymentId}}</div></div>
+          <div class="meta-row"><div class="k">{{#if (eq lang "ar")}}التاريخ{{else}}Date{{/if}}</div><div class="v">{{date}}</div></div>
+          <div class="meta-row"><div class="k">{{#if facilityName}}{{#if (eq lang "ar")}}المنشأة{{else}}Facility{{/if}}{{/if}}</div><div class="v">{{facilityName}}</div></div>
+        </div>
+      </div>
+
+      <div class="bill-box">
+        <div class="bill-title">{{#if (eq lang "ar")}}فاتورة إلى{{else}}Bill to{{/if}}</div>
+        <div>{{#if userName}}{{userName}}{{else}}-{{/if}}</div>
+        {{#if userEmail}}<div style="color:var(--muted);font-size:12px;margin-top:6px">{{userEmail}}</div>{{/if}}
+      </div>
+
+      <h2 style="margin-top:0">{{titleLocalized}}</h2>
+      {{#if descriptionLocalized}}<p style="margin-top:6px;margin-bottom:12px;color:var(--muted)">{{descriptionLocalized}}</p>{{/if}}
+
+      <table class="items" role="table" aria-label="Invoice items">
+        <thead>
+          <tr>
+            <th>{{#if (eq lang "ar")}}الوصف{{else}}Description{{/if}}</th>
+            <th style="width:120px" class="right">{{#if (eq lang "ar")}}المبلغ ({{currency}}){{else}}Amount ({{currency}}){{/if}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{lineDescription}}</td>
+            <td class="right">{{amount}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="totals">
+        <div class="box">
+          <div class="row total"><div>{{#if (eq lang "ar")}}الإجمالي{{else}}Total{{/if}}</div><div class="right">{{amount}}</div></div>
+        </div>
+      </div>
+
+      <footer>
+        {{#if (eq lang "ar")}}شكراً لاستخدامك خدمتنا.{{else}}Thank you for your business.{{/if}}
+      </footer>
+    </div>
+  </body>
+</html>
