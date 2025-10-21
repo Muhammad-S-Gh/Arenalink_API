@@ -1,0 +1,6 @@
+{
+    "test": "Hello abdul",
+    "success": "Success",
+    "greeting": "greeting this is {username}",
+    "operationCompleted": "operation completed successfully"
+}

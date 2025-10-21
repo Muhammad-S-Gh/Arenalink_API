@@ -1,0 +1,10 @@
+{
+    "facilityNotFound": "لم يتم العثور على المنشأة.",
+    "facilityInactive": "لا يمكنك إنشاء جدول منشأة غير مفعلة.",
+    "UserNotAuthenticated": "الرجاء تسجيل الدخول أولاََ",
+    "NotFound": "لم يتم العثور على {EnEntity}",
+    "OwnerNotAuthorized": "حالة المالك غير نشط وباالتالي ليس مصرحا للقيام بهذا الفعل",
+    "InternalServerError":"مشكلة داخلية في المخدم",
+    "phoneNotFound": "لم يتم العثور على رقم الهاتف",
+    "UserNotAuthorized": "حالة المستخدم غير نشط وباالتالي ليس مصرحا للقيام بهذا الفعل"
+}

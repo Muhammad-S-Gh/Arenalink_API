@@ -1,0 +1,40 @@
+{
+    "statusRequired": "Status is required",
+    "invalidStatus": "Invalid status value",
+    "currentPasswordRequired": "Current password is required",
+    "newPasswordRequired": "New password is required",
+    "passwordConfirmationRequired": "Password confirmation is required",
+    "passwordMinLength": "Password must be at least 8 characters",
+    "passwordsDoNotMatch": "Passwords do not match",
+    "emailAlreadyInUse": "Email already in use",
+    "phoneAlreadyInUse": "Phone number already in use",
+    "firstNameRequired": "First name is required",
+    "firstNameMinLength": "First name must be at least 2 characters",
+    "firstNameMaxLength": "First name cannot exceed 255 characters",
+    "lastNameRequired": "Last name is required",
+    "lastNameMinLength": "Last name must be at least 2 characters",
+    "lastNameMaxLength": "Last name cannot exceed 50 characters",
+    "invalidEmail": "Invalid email format",
+    "emailMaxLength": "Email cannot exceed 255 characters",
+    "invalidPhoneNumber": "Invalid phone number format",
+    "invalidLatitude": "Invalid latitude value",
+    "invalidLongitude": "Invalid longitude value",
+    "deleteUser": "User have future reservations",
+    "deleteOwner": "Owner has active facilities delete them before deleting the owner",
+    "errors": {
+        "user_not_found": "User not found",
+        "wrong_password": "Wrong Password",
+        "owner_not_found": "Owner not found",
+        "invalid_status": "Invalid status",
+        "owner_not_found_by_user": "Owner not found",
+        "unauthorized": "Unauthorized",
+        "token_not_found": "Token not found in authorization header"
+    },
+    "success": {
+        "password_updated": "Your password was updated successfully",
+        "profile_updated": "Profile updated successfully",
+        "profile_deleted": "Profile deleted successfully",
+        "logged_out": "Logged out",
+        "status_changed": "Status changed successfully"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "requiredDate": "تاريخ الحجز مطلوب.",
+    "invalidDateFormat": "يجب أن يكون التاريخ بصيغة YYYY-MM-DD.",
+    "dateMustBeFuture": "لا يجب أن يكون تاريخ الحجز في يوم ماضي .",
+    "slotNotFound": "الفتحة المطلوبة غير موجودة.",
+    "availabilityNotFound": "الجدول المطلوب غير موجود.",
+    "facilityNotFound": "المرفق غير موجود.",
+    "slotMismatch": "الفترة لا تتبع الجدول/المرفق المحدد.",
+    "alreadyReserved": "هذه الفتحة محجوزة بالفعل في التاريخ المحدد.",
+    "reservationCreated": "تم إنشاء الحجز (قيد الانتظار للدفع).",
+    "slotBlocked": "هذه الفتحة محجوزة بالفعل لتاريخ معتمد.",
+    "reservationCreatedPending": "تم إنشاء الحجز (قيد الانتظار للدفع).",
+    "invalidPaymentMethodId": "معرّف طريقة الدفع يجب أن يكون سلسلة نصية صالحة.",
+    "paymentMethodIdRequired": "معرّف طريقة الدفع مطلوب.",
+    "invalidAmount": "يجب أن يكون المبلغ رقمًا صالحًا.",
+    "amountRequired": "المبلغ مطلوب.",
+    "reservationNotFound": " الحجز غير موجود."
+}

@@ -1,0 +1,18 @@
+{
+    "requiredDate": "Reservation date is required.",
+    "invalidDateFormat": "Date must be in YYYY-MM-DD format.",
+    "dateMustBeFuture": "Reservation date must not be a past calendar day.",
+    "slotNotFound": "Slot not found.",
+    "availabilityNotFound": "Availability not found.",
+    "facilityNotFound": "Facility not found.",
+    "slotMismatch": "Slot does not belong to the given availability/facility.",
+    "alreadyReserved": "This slot is already reserved for the given date.",
+    "reservationCreated": "Reservation created (pending payment).",
+    "slotBlocked": "This slot/date is already taken (approved reservation).",
+    "reservationCreatedPending": "Reservation created (pending payment).",
+    "invalidPaymentMethodId": "Payment method ID must be a valid string.",
+    "paymentMethodIdRequired": "Payment method ID is required.",
+    "invalidAmount": "Amount must be a valid number.",
+    "amountRequired": "Amount is required.",
+    "reservationNotFound": "reservation not found."
+}
