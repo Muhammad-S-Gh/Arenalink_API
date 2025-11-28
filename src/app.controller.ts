@@ -35,7 +35,6 @@ export class AppController {
         private readonly i18n: YcI18nService,
         private readonly mailService: MailService,
     ) {}
-
     @Public()
     @Get()
     getRoot() {

@@ -3,7 +3,6 @@ import { config } from 'dotenv';
 import * as path from 'path';
 import { SeederOptions } from 'typeorm-extension';
 import { UserFactory } from '../seeding/user.factory';
-
 config({ path: path.resolve(__dirname, '../../.env') });
 
 export const dataSourceOptions: DataSourceOptions & SeederOptions = {

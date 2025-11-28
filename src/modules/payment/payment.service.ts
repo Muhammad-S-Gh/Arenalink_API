@@ -59,7 +59,6 @@ export class PaymentService {
             apiVersion: '2025-07-30.basil',
         });
         this.webhookSecret = configService.getOrThrow('STRIPE_WEBHOOK_SECRET');
-
         const tplPath = path.join(process.cwd(), 'src', 'modules', 'payment', 'templates', 'invoice.hbs');
         try {
             this.templateHtml = fs.readFileSync(tplPath, 'utf8');
@@ -200,7 +199,6 @@ export class PaymentService {
                     where: { stripePaymentIntentId: paymentIntent.id },
                     relations: ['reservation'],
                 });
-
                 if (existingByIntent) {
                     return {
                         clientSecret: paymentIntent.client_secret,

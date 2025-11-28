@@ -403,7 +403,6 @@ export class AdminsController {
             if (error instanceof NotFoundException) {
                 throw new NotFoundException(error.message);
             }
-
             throw new HttpException('Failed to update category: ' + error.message, HttpStatus.BAD_REQUEST);
         }
     }
